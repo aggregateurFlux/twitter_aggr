@@ -14,9 +14,11 @@ var timeline =  function(req, res,twitter) {
 
 				for (var i = 0; i < data.length; i++) {
 					result[i] = {
-						id : data[i].id,
-						createdAt : data[i].created_at,
-						user : data[i].user,
+						idAuthor : data[i].user.id_str,
+						authorName : data[i].user.name,
+						postId : data[i].id_str,
+						postCreatedAt : data[i].created_at,
+						imageLink : "",
 						content : data[i].text
 					}
 				}
