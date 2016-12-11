@@ -5,7 +5,8 @@
 #Routes : 
 ##METHODE : GET
 ###/auth :
-- Lancement de la procédure pour récupération de l'access Token de utilisateur actuel sur Twitter : /!\ NON-FONCTIONEL /!\
+- Lancement de la procédure pour récupération de l'access Token de utilisateur actuel sur Twitter : 
+/!\ NON-FONCTIONEL /!\
 
 ###/callback : 
 - Route utilisé par la redirection de Twitter pour récupérer l'access Token
