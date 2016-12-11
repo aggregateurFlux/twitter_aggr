@@ -33,14 +33,14 @@
   - content : Contenu texte du post incluant les éventuelles URL
 - Exemple :
 
-  > - {
-  > - "idAuthor": "191227008",
-  > - "authorName": "Vince Sim",
-  > - "postId": "808091268333076480",
-  > - "postCreatedAt": "Sun Dec 11 23:29:06 +0000 2016",
-  > - "imageLink": "",
-  > - "content": "Grosse démonstration !"
-  > - },
+  > #### {
+  > #### "idAuthor": "191227008",
+  > #### "authorName": "Vince Sim",
+  > #### "postId": "808091268333076480",
+  > #### "postCreatedAt": "Sun Dec 11 23:29:06 +0000 2016",
+  > #### "imageLink": "",
+  > #### "content": "Grosse démonstration !"
+  > #### },
 
 ##METHODE : POST
 ###/post :
