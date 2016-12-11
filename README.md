@@ -26,16 +26,20 @@
   - access_token : [AccessToken de l'utilisateur]
   - access_token_secret : [AccessTokenSecret de l'utilisateur]
 - Le retour en JSON contiendra les données suivantes :
-- id : Id du post sur Twitter
-- createdAt : Date de création du post
-- content : Le contenu du post
-- user : Cette information possede plusieurs attributs comme :
-- Le nom public de l'utilisateur
-- Son nom sur twitter (précédé d'un @)
-- La localisation qu'il a indiqué sur son compte Twitter
-- Sa description
-- Les URL qu'il a put renseigner en public sur Twitter
-- Beaucoup d'information propre a son compte twitter comme l'url de son avatar, le couleur de son theme, image de fond, etc ...
+  - idAuthor : Identifiant Twitter de l'auteur
+  - authorName : Nom public de l'auteur (pas son username Twitter)
+  - postId : Identifiant Twitter du post 
+  - ImageLink : Valeur obligatoire pour l'API core_aggr mais vide
+  - content : Contenu texte du post incluant les éventuelles URL
+- Exemple :
+  > {
+  > "idAuthor": "191227008",
+  > "authorName": "Vince Sim",
+  > "postId": "808091268333076480",
+  > "postCreatedAt": "Sun Dec 11 23:29:06 +0000 2016",
+  > "imageLink": "",
+  > "content": "Grosse démonstration !"
+  > }
 
 ##METHODE : POST
 ###/post :
