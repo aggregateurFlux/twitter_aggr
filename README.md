@@ -6,6 +6,7 @@
 ##METHODE : GET
 ###/auth :
 - Lancement de la procédure pour récupération de l'access Token de utilisateur actuel sur Twitter : 
+
 /!\ NON-FONCTIONEL /!\
 
 ###/callback : 
