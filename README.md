@@ -14,12 +14,12 @@
 ###/auth :
 - Lancement de la procédure pour récupération de l'access Token de l'utilisateur actuel sur Twitter : 
 
-:red_circle: NON-FONCTIONEL
+:heavy_exclamation_mark: NON-FONCTIONEL
 
 ###/callback : 
 - Route utilisé par la redirection de Twitter pour récupérer l'access Token. 
 
-:red_circle: PAS D'ACCES DIRECT
+:heavy_exclamation_mark: PAS D'ACCES DIRECT
 
 ###/timeline :
 - Route qui permet de récupérer le fil d'actualité d'un utilisateur en JSON, pour aboutir la requête doit contenir 2 paramètres :
