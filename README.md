@@ -1,6 +1,6 @@
 #API Aggregateur Twitter :
-Auteur : Agrijb
-Version : 0.1
+- Auteur : Agrijb
+- Version : 0.1
 
 #Routes : 
 ##METHODE : GET
