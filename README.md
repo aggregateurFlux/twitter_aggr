@@ -13,8 +13,11 @@ Version : 0.1
 ##METHODE : GET
 ###/timeline :
 - Route qui permet de récuperer le fil d'actualité d'un utilisateur en JSON, pour aboutir la requete doit contenir 2 parametres :
+
 *access_token : [Votre AccessToken]
+
 *access_token_secret : [Votre AccessTokenSecret]
+
 - Le retour en JSON contiendra les données suivantes :
 - id : Id du post sur Twitter
 - createdAt : Date de création du post
@@ -30,6 +33,9 @@ Version : 0.1
 ##METHODE : POST
 ###/post :
 - Route qui permet de poster un statut sur Twitter, la requete doit contenir 3 paramétres :
+
 *access_token : [Votre AccessToken]
+
 *access_token_secret : [Votre AccessTokenSecret]
+
 *content : [Votre Post]
