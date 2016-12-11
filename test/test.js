@@ -1,26 +1,20 @@
 var assert = require('assert');
 
 describe('routes', function() {
-	describe('/timeline', function(){
-		it('should return SUCCESS', function() {
-		//Expected
-		var expected = "FAILED";
+	describe('index', function(){
+		it('should return title and body', function() {
+			//Expected
+			var expected = JSON.stringify({
+				title : "Test mocha",
+				body : "Test unitaire mocha 01"
+			});
 
-		//Get
-		var result = 
+			//Get
+			var routes = require("../routes");
 
-		assert.notEqual( result, expected);
-		});
-	});
-	describe('/post', function(){
-		it('should return SUCCESSFUL POST', function() {
-		//Expected
-		var expected = "SUCCESSFUL POST";
+			var result = routes.index();
 
-		//Get
-		var result = add(0,1);
-
-		assert.Equal( result, expected);
+			assert.equal( result, expected);
 		});
 	});
 	// TEST DE /AUTH NON IMPLEMENTE CAR NON-FONCTIONEL

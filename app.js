@@ -20,13 +20,11 @@ app.get('/auth', function (req, res) { // route pour '/'
 	    if (error) {
 	        console.log("Error getting OAuth request token : " , error);
 	    } else {
-	        //store token and tokenSecret somewhere, you'll need them later; redirect user
 	        console.log("requestToket :",requestToken); 
 	        console.log("secret : ", requestTokenSecret);
 	        requestToken = requestToken;
 	        requestTokenSecret = requestTokenSecret;
-	        var url = "https://twitter.com/oauth/authenticate?oauth_token="+requestToken;
-	        // var url = twitter.getAuthUrl(requestToken);
+	        var url = twitter.getAuthUrl(requestToken);
 	        console.log("URL : ",url);
 	        res.redirect(url);
 
@@ -52,12 +50,10 @@ app.get('/callback', function(req, res) {
 });
 
 app.get('/timeline', function(req,res) {
-	console.log("routes.timeline : ", routes.timeline);
 	routes.timeline(req,res,twitter);
 });
 
 app.post('/post', function(req, res){
-	console.log("routes.post : ", routes.post);
 	routes.post(req, res, twitter);
 });
 
