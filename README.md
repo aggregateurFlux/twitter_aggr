@@ -1,5 +1,5 @@
 #API Aggregateur Twitter :
-Auteur : Vincent Simonneau
+Auteur : Agrijb
 Version : 0.1
 
 #Routes : 
