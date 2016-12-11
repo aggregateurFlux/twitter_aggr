@@ -1,8 +1,8 @@
 var twitterAPI = require("node-twitter-api");
 var twitter = new twitterAPI ({
-	consumerKey:'fRQaPhfZlTLECNCOH3js7QOWm',
-	consumerSecret: 'AfNh4HPfBfXCp1BBWteG4D9FDQAOkuP8dPQxp3MXA117gf7DqU',
-	callback : 'http://localhost:8080/callback'
+	consumerKey:'SjiwMu7OIZ9JZeqFxBc62Imrm',
+	consumerSecret: 'xX2nUApxeqBagZ4vjjDMSiCG6IBIiT9dc5IRgGikNTwKfq49L3',
+	callback : 'http://localhost:8012/callback'
 });
 var express = require("express");
 var app = express();
