@@ -17,9 +17,14 @@ var post = function(req, res, twitter) {
             if (error) {
                 console.log("FAILED: ", error);
             } else {
-                res.setHeader("Content-Type","text/html")
                 console.log("SUCCESSFUL POST")
-                res.end(content); 
+                var success = {
+                  status : "200",
+                  content : content,
+                  message : "successfuly posted"  
+                };
+                res.setHeader("Content-Type","text/json")
+                res.send(JSON.stringify(success)); 
             }
         }
     );
