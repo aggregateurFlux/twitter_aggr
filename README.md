@@ -2,6 +2,12 @@
 - Auteur : Agrijb
 - Version : 0.1
 
+#Démarrer le serveur :
+- Installer les dépendances avec le "package.json"
+  - `npm install`
+- Démarrer le serveur :
+  - `node app.js`
+- Rendez-vous a l'adresse suivante : http://localhost:8012
 #Routes : 
 ##METHODE : GET
 ###/auth :

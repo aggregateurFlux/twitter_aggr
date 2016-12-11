@@ -9,6 +9,7 @@ var app = express();
 var requestToken;
 var requestTokenSecret;
 var oauth_verifier;
+var oauth_token;
 
 var routes = require("./routes");
 
@@ -63,4 +64,4 @@ app.use(function(request, response, next) {
 	response.send(404, JSON.stringify( 'Page not found !') ); 
 });
 
-app.listen(8080);
+app.listen(8012);
