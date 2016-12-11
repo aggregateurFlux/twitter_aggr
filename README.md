@@ -20,7 +20,7 @@ Routes :
 				- createdAt : Date de création du post
 				- content : Le contenu du post
 				- user : Cette information possede plusieurs attributs comme :
-					- Le nom de l'utilisateur
+					- Le nom public de l'utilisateur
 					- Son nom sur twitter (précédé d'un @)
 					- La localisation qu'il a indiqué sur son compte Twitter
 					- Sa description

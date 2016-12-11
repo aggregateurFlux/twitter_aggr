@@ -52,7 +52,7 @@ app.get('/callback', function(req, res) {
 });
 
 app.get('/timeline', function(req,res) {
-	console.log("routes.timline : ", routes.timeline);
+	console.log("routes.timeline : ", routes.timeline);
 	routes.timeline(req,res,twitter);
 });
 
