@@ -22,7 +22,7 @@
 :heavy_exclamation_mark: PAS D'ACCES DIRECT
 
 ###/timeline :
-- Route qui permet de récupérer le fil d'actualité d'un utilisateur en JSON, pour aboutir la requête doit contenir 2 paramètres :
+- Route qui permet de récupérer le fil d'actualité d'un utilisateur en JSON, pour aboutir la requête doit contenir 2 paramètres dans le header :
   - access_token : [AccessToken de l'utilisateur]
   - access_token_secret : [AccessTokenSecret de l'utilisateur]
 - Le retour en JSON contiendra les données suivantes :
@@ -46,7 +46,7 @@
 
 ##METHODE : POST
 ###/post :
-- Route qui permet de poster un statut sur Twitter, la requête doit contenir 3 paramétres :
+- Route qui permet de poster un statut sur Twitter, la requête doit contenir 3 paramétres dans le header :
   - access_token : [AccessToken de l'utilisateur]
   - access_token_secret : [AccessTokenSecret de l'utilisateur]
   - content : [Votre Post]
